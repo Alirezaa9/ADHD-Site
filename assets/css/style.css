@@ -22,11 +22,25 @@ body {
 
 /*header*/
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 3px 3px 3px #6a6a6a;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     font-family: oswalf,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #252525;
+
 }
 /*main content*/
 main {
