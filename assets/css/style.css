@@ -27,7 +27,10 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 3px 3px 3px #6a6a6a;
+    box-shadow: 0 3px 3px #6a6a6a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -62,8 +65,21 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 3px 3px 3px #6a6a6a;
+    box-shadow: 0 3px 3px #6a6a6a;
     display: none;
+    top: 100%;
+    
+}
+/*nav toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    font-size: 2rem;
 }
 /*main content*/
 main {
