@@ -31,6 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
 }
 
 header a {
@@ -39,7 +40,7 @@ header a {
 }
 
 h1 {
-    font-family: oswalf,sans-serif;
+    font-family: oswalf, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #252525;
@@ -51,13 +52,14 @@ h1 {
     letter-spacing: 4px;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
 .active {
     border-bottom: 1px solid #252525;
 }
+
 /*navbar styles and dropdown toggle*/
 nav {
     position: absolute;
@@ -68,8 +70,9 @@ nav {
     box-shadow: 0 3px 3px #6a6a6a;
     display: none;
     top: 100%;
-    
+
 }
+
 /*nav toggle*/
 #nav-toggle:checked~nav {
     display: block;
@@ -78,9 +81,11 @@ nav {
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /*main content*/
 main {
     background-color: lightblue;
@@ -92,4 +97,28 @@ main {
 /*footer*/
 footer {
     background-color: orange;
+}
+
+/*media query: tablets and larger screen(768px and up)*/
+@media screen and (min-width: 768px) {
+
+    /*header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+        #menu {
+            display: flex;
+            list-style: none;
+        }
+
+        #menu>li {
+            padding: 1rem;
+        }
+        .nav-toggle-label {
+            display: none;
+        }
 }
