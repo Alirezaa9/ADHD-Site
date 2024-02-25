@@ -18,6 +18,12 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: lightblue;
 }
+h1, h2, h3, h5 {
+    font-family: oswalf, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #252525;
+    }
 
 
 
@@ -40,12 +46,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: oswalf, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #252525;
-}
+
 
 #menu {
     font-size: 120%;
@@ -96,8 +97,25 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url(../images);
+    background: url(../images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+    position: relative;
 }
+
+#cover-text {
+    background-color: rgba(134, 168, 172, 0.63);
+    font-size: 120%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h3, #cover-text > h5 {
+    color: #ffffff;
+}
+
 /*footer*/
 #social-networks {
     text-align: center;
@@ -143,7 +161,13 @@ main {
             /*push main content down to commodate larger header*/
             margin-top: 92px;
         }
-    
+        
+        /*hero*/
+        #cover-text {
+            width: 300px;
+            right: 50px;
+        }
+
         #hero {
             height: 600px;
             width: 100%;
