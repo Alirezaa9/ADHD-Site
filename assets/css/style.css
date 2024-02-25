@@ -89,12 +89,15 @@ nav {
 
 /*main content*/
 main {
-    background-color: lightblue;
     /*make main element totake up any surplus space to oush footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
 }
-
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images);
+}
 /*footer*/
 #social-networks {
     text-align: center;
