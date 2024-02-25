@@ -143,6 +143,7 @@ main {
             /*push main content down to commodate larger header*/
             margin-top: 92px;
         }
+     
 }
 /*laptps and pcs(992px and up)*/
 @media screen and (min-width: 992px) {
