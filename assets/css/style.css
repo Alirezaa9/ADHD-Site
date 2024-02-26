@@ -29,7 +29,7 @@ h5 {
     color: #252525;
 }
 
-.hidden-heading{
+.hidden-heading {
     display: none;
 }
 
@@ -225,6 +225,21 @@ hr {
     color: #fafafa;
 }
 
+/* gallary page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
 /*media query: tablets and larger screen(768px and up)*/
 @media screen and (min-width: 768px) {
 
@@ -284,12 +299,30 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery page */
+    #photos {
+        column-count: 3;
+    }
+
+}
+
+/* media screen: large or landscape photos (576px or more) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /*laptps and pcs(992px and up)*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #2a2a2a;
+    }
+
+    #photos {
+        column-count: 4;
     }
 }
 
