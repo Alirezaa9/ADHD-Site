@@ -137,6 +137,75 @@ main {
     color: #2a2a2a;
 }
 
+/* Testing */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+}
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#circle-cover {
+    background: url(../images/circle-small.jpg);
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#benefit-physical,
+#benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefit-physical>div,
+#benefit-mental>div {
+    width: 75%;
+}
+
+#benefit-physical>div {
+    text-align: left;
+    align-self: flex-end;
+}
+
+/* end of testing */
+
 /*media query: tablets and larger screen(768px and up)*/
 @media screen and (min-width: 768px) {
 
@@ -180,7 +249,7 @@ main {
         right: 50px;
     }
 
-    #hero {
+    /* #hero {
         height: 600px;
         width: 100%;
         background: url(../images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
@@ -213,7 +282,7 @@ main {
     }
 
     #circle-cover {
-        background: url(../images/image.png);
+        background: url(../images/circle-small.jpg);
         height: 90vw;
         width: 90vw;
         margin-bottom: 20px;
@@ -223,12 +292,65 @@ main {
 
     }
 
-    /*laptps and pcs(992px and up)*/
-    @media screen and (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #2a2a2a;
+    #benefits-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* * */
+    #benefit-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-        }
+    #benefit-physical>div,
+    #benefit-mental>div {
+        width: 75%;
+    }
+
+    #benefit-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+}
+
+/*laptps and pcs(992px and up)*/
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #2a2a2a;
+
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits>div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical>div {
+        align-self: flex-end;
     }
 
 }
