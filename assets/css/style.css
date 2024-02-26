@@ -18,12 +18,16 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: lightblue;
 }
-h1, h2, h3, h5 {
+
+h1,
+h2,
+h3,
+h5 {
     font-family: oswalf, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #252525;
-    }
+}
 
 
 
@@ -94,6 +98,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 #hero {
     height: 600px;
     width: 100%;
@@ -112,7 +117,8 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h3, #cover-text > h5 {
+#cover-text>h3,
+#cover-text>h5 {
     color: #ffffff;
 }
 
@@ -124,11 +130,13 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 180%;
     padding: 5%;
     color: #2a2a2a;
 }
+
 /*media query: tablets and larger screen(768px and up)*/
 @media screen and (min-width: 768px) {
 
@@ -140,46 +148,87 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
-        #menu {
-            display: flex;
-            list-style: none;
-        }
 
-        #menu>li {
-            padding: 1rem;
-        }
-        .nav-toggle-label {
-            display: none;
-        }
-        #logo {
-            font-size: 280%;
-            line-height: 75px;
-            margin: 0 0.5rem;
-        }
-        /*main content*/
-        main {
-            /*push main content down to commodate larger header*/
-            margin-top: 92px;
-        }
-        
-        /*hero*/
-        #cover-text {
-            width: 300px;
-            right: 50px;
-        }
+    #menu {
+        display: flex;
+        list-style: none;
+    }
 
-        #hero {
-            height: 600px;
-            width: 100%;
-            background: url(../images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
-            }
+    #menu>li {
+        padding: 1rem;
+    }
 
-/*laptps and pcs(992px and up)*/
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #2a2a2a;
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*main content*/
+    main {
+        /*push main content down to commodate larger header*/
+        margin-top: 92px;
+    }
+
+    /*hero*/
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+    #hero {
+        height: 600px;
+        width: 100%;
+        background: url(../images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+    }
+
+    #reasons {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #reasons h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    #benefits p {
+        padding: 0 20px;
+    }
+
+    hr {
+        border-top: 1px solid #3a3a3a;
+        margin: 5px 0;
+    }
+
+    #circle-cover {
+        background: url(../images/middle.png);
+        height: 90vw;
+        width: 90vw;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        max-width: 300px;
+        max-height: 300px;
 
     }
-}
-    
+
+    /*laptps and pcs(992px and up)*/
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #2a2a2a;
+
+        }
+    }
+
 }
